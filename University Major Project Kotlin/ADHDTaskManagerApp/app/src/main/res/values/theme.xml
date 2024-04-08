@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.ADHDTaskManager" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/NavyBlueLight</item>
+        <item name="colorPrimaryVariant">@color/BlueGrottoLight</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/BlueGreenLight</item>
+        <item name="colorSecondaryVariant">@color/BabyBlueLight</item>
+        <item name="colorOnSecondary">#000000</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/BlueGreenLight</item>
+        <item name="android:navigationBarColor" tools:targetApi="l">@color/NavyBlueDark</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+
+    </style>
+
+
+    <style name="Theme.ADHDTaskManager.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.ADHDTaskManager.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.ADHDTaskManager.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.ProgressBar" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/NavyBlueDark</item>
+        <item name="colorPrimaryVariant">@color/BlueGrottoDark</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/BlueGreenDark</item>
+        <item name="colorSecondaryVariant">@color/BabyBlueDark</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/BlueGreenDark</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <!--Here, android: indeterminateDrawable sets the picture displayed in
+        the animation or the xml file of this animation and android: indeterminateOnly
+           This property is set to true,the progress bar will be ignored Progress and present
+           an infinite loop of animation
+    -->
+    <style name="CircularDeterminateProgressBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/circle</item>
+    </style>
+</resources>

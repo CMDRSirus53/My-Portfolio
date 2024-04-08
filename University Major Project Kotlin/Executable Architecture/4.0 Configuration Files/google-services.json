@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "525253102394",
+    "project_id": "adhdtaskmanager-d532d",
+    "storage_bucket": "adhdtaskmanager-d532d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525253102394:android:315a395d05166ba2381e03",
+        "android_client_info": {
+          "package_name": "com.csu_itc303_team1.adhdtaskmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525253102394-ghokfrc6nfj09amt9aqf0tgtkndu1tr3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.csu_itc303_team1.adhdtaskmanager",
+            "certificate_hash": "52b591f02d2650fff84d1c477195cb9ae718c576"
+          }
+        },
+        {
+          "client_id": "525253102394-s29vu43otv2br84kgvfjjtje4pgpmoa0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq0PQF1lTyuAkVGsKS7ATUFOU8_MU6wko"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "525253102394-043a3008v3ofp1ias7lqgt6g64brgb49.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

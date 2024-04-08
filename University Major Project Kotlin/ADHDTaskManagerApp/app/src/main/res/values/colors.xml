@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="NavyBlueDark">#FF05445E</color>
+    <color name="BlueGrottoDark">#FF0476D0</color>
+    <color name="BlueGreenDark">#FF75E6DA</color>
+    <color name="BabyBlueDark">#FF8BD9E1</color>
+    <color name="NavyBlueLight">#FF0A85B9</color>
+    <color name="BlueGrottoLight">#FF56D0E9</color>
+    <color name="BlueGreenLight">#FFBEF3EE</color>
+    <color name="BabyBlueLight">#FFD4F1F4</color>
+
+    <color name="colorPrimary">@color/NavyBlueLight</color>
+    <color name="colorPrimaryDark">@color/NavyBlueDark</color>
+    <color name="onPrimary">#FFFFFF</color>
+    <color name="onPrimaryDark">#FFFFFF</color>
+    <color name="colorPrimaryVariant">@color/BlueGrottoLight</color>
+    <color name="colorPrimaryVariantDark">@color/BlueGrottoDark</color>
+
+    <color name="secondary">@color/BlueGreenLight</color>
+    <color name="secondaryDark">@color/BlueGreenDark</color>
+    <color name="onSecondary">#000000</color>
+    <color name="onSecondaryDark">#FFFFFF</color>
+    <color name="secondaryVariant">@color/BabyBlueLight</color>
+    <color name="secondaryVariantDark">@color/BabyBlueDark</color>
+    <color name="toastBackground">#11143e</color>
+
+
+</resources>

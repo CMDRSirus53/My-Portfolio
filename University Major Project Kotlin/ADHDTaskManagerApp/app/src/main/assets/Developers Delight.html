@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Developers Delight</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        h1 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+        function toggleC4DiagramVisibility() {
+            var diagram = document.getElementById('c4Diagram');
+            diagram.classList.toggle('hidden');
+        }
+
+        function toggleClassDiagramVisibility() {
+            var diagram = document.getElementById('classDiagram');
+            diagram.classList.toggle('hidden');
+        }
+
+        function toggleComponentDiagramVisibility() {
+            var diagram = document.getElementById('componentDiagram');
+            diagram.classList.toggle('hidden');
+        }
+
+        function toggleSequenceDiagramVisibility() {
+            var diagram = document.getElementById('sequenceDiagram');
+            diagram.classList.toggle('hidden');
+        }
+
+        function toggleUsecaseInventoryVisibility() {
+            var diagram = document.getElementById('usecaseInventory');
+            diagram.classList.toggle('hidden');
+        }
+
+        function toggleSystemsInterconnectionsVisibility() {
+            var diagram = document.getElementById('systemsInterconnections');
+            diagram.classList.toggle('hidden');
+        }
+        // Function to go back to the previous page
+        function goBack() {
+            window.history.back();
+        }
+
+        // Function to go back to the previous page or show the help screen
+        function goBack() {
+            var helpScreen = document.getElementById('HelpScreen.kt');
+            if (HelpScreen.kt.classList.contains('hidden')) {
+                // If the help screen is hidden, go back in the browser history
+                window.history.back();
+            } else {
+                // If the help screen is already visible, hide it
+               HelpScreen.kt.classList.toggle('hidden');
+            }
+        }
+
+        // Function to show the help screen
+        function showHelpScreen() {
+            var helpScreen = document.getElementById('helpScreen');
+            helpScreen.classList.remove('hidden');
+        }
+    </script>
+</head>
+
+<body>
+<!-- <button class="back-button" onclick="goBack()">Back</button> -->
+
+<!-- Add a new section for the help screen -->
+<div id="helpScreen" class="hidden">
+    <!-- Your help screen content goes here -->
+</div>
+
+<h1>Developers Section</h1>
+<h2>C4 Diagram</h2>
+<ul>
+    <li onclick="toggleC4DiagramVisibility()">Click to view content</li>
+    <img id="c4Diagram" class="hidden" src="file:///android_asset/c4 diagram.png" alt="C4 Diagram" style="max-width: 100%; height: auto;">
+</ul>
+
+<h2>Class Diagram</h2>
+<ul>
+    <li onclick="toggleClassDiagramVisibility()">Click to view content</li>
+    <img id="classDiagram" class="hidden" src="file:///android_asset/Class Diagram 1.0.jpg" alt="Class Diagram" style="max-width: 100%; height: auto;">
+    <!-- Add more items as needed -->
+</ul>
+
+<h2>Component Diagram</h2>
+<ul>
+    <li onclick="toggleComponentDiagramVisibility()">Click to view content</li>
+    <img id="componentDiagram" class="hidden" src="file:///android_asset/Class Diagram 1.0.jpg" alt="Class Diagram" style="max-width: 100%; height: auto;">
+    <!-- Add more items as needed -->
+</ul>
+
+<h2>Sequence Diagram</h2>
+<ul>
+    <li onclick="toggleSequenceDiagramVisibility()">Click to view content</li>
+    <img id="sequenceDiagram" class="hidden" src="file:///android_asset/Sequence Diagram.png" alt="Class Diagram" style="max-width: 100%; height: auto;">
+    <!-- Add more items as needed -->
+</ul>
+
+<h2>Use case with EDR and Data Model</h2>
+<ul>
+    <li><a href="https://drive.google.com/file/d/1ZY_fAYcvj79Nmv9qYHJbC9kTbnf36YCt/view?usp=share_link" target="_blank">Click to view content</a></li>
+
+</ul>
+
+<h2>Systems Interconnections Model</h2>
+<ul>
+    <li><a href="https://drive.google.com/file/d/1JMI9Rmh_o4YjxOky212W0BDYu_j5mq67/view?usp=share_link" target="_blank">Click to view content</a></li>
+
+</ul>
+
+<!-- Add more sections as needed -->
+</body>
+
+</html>
