@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Gallery - Matthew Neil Software</title>	
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" media="print" href="css/print_style.css">
+	<script>
+	
+	function myFunction(imgs) {
+		var expandImg = document.getElementById("expandedImg");
+		var imgText = document.getElementById("imgtext");
+		expandImg.src = imgs.src;
+		imgText.innerHTML = imgs.alt;
+		expandImg.parentElement.style.display = "block";
+	} 
+	
+	</script>	
+	
+</head>
+
+<body>
+	
+	<header class="hero">
+		<div class="container">
+			<img src="images/logo.jpg" alt="" class="logoImg">
+			<h1 class="primary-title">Matthew Neil Software</h1>
+			<nav class="navbar">
+				<ul class="nav-list">
+					<li><a href="index.html" class="btn">Home</a></li>
+					<li><a href="mneil_A1_about.html" class="btn">About</a></li>
+					<li><a href="mneil_A1_resume.html" class="btn">Resume</a></li>
+					<li><a href="mneil_A1_webskills.html" class="btn">Web Skills</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<main>
+		
+			<div class="container">
+				<h2 class="section-title">Gallery</h2>
+				<br>
+				<p class="welcome">
+					These are some posters of my favourite games!
+				</p>
+				<br>
+				
+				<div class="row">
+					<div class="column">
+					 
+						<img class="gallery" src="images/pubg.jpg" alt="PlayerUnknown's Battlegrounds" onclick="myFunction(this);">
+					</div>
+					<div class="column">
+						
+						<img class="gallery" src="images/acc.jpg" alt="Assetto Corsa Competizione" onclick="myFunction(this);">
+					</div>
+					<div class="column">
+						
+						<img class="gallery" src="images/zelda.jpg" alt="The Legend of Zelda: The Breath of the Wild" onclick="myFunction(this);">
+					</div>
+					<div class="column">
+						
+						<img class="gallery" src="images/rdr2.jpg" alt="Red Dead Redemption 2" onclick="myFunction(this);">
+					</div>
+				</div>
+
+				
+				<div class="image_container">
+					
+					<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+					
+					<img id="expandedImg" style="width:100%" alt="">
+
+					<br>
+				
+					<div id="imgtext"></div>
+					<br>
+				</div>
+			</div>
+		
+		
+	</main>
+	
+	<footer>
+         <p class="footerContent">
+            Email: <a class="footerLink" 
+               href="mailto:demonstration@example.com.au"> matthewneilsoftware@gmail.com</a>
+         </p>
+         <p class="footerContent"> Phone: 5512 3456</p>
+         <p>
+            &copy; 2023. All rights reserved. The developer of this site has 
+            permission to use all materials contained within.
+         </p>
+    </footer>
+	
+	
+</body>
+</html>

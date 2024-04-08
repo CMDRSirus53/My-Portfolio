@@ -1,0 +1,26 @@
+
+@media print {
+		
+	.btn,
+	.navbar,
+	.nav-list,
+	.logoImg { 
+	display: none;
+	}
+	
+	footer,
+	.footerLink,
+	.red,
+	.resumeHeadings	{
+		color: black;
+	}
+	
+	.content, .job, .jobs, th, td {
+		font-size: 14pt;
+	}
+	
+	.resumeHeadings, caption {
+		font-size: 16pt;
+	}
+	
+}

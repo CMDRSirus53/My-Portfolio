@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Guessing Game - Matthew Neil Software</title>	
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" media="print" href="css/print_style.css">	
+	
+</head>
+
+<body>
+	
+	<header class="hero">
+		<div class="container">
+			<img src="images/logo.jpg" alt="" class="logoImg">
+			<h1 class="primary-title">Matthew Neil Software</h1>
+			<nav class="navbar">
+				<ul class="nav-list">
+					<li><a href="index.html" class="btn">Home</a></li>
+					<li><a href="mneil_A1_about.html" class="btn">About</a></li>
+					<li><a href="mneil_A1_resume.html" class="btn">Resume</a></li>
+					<li><a href="mneil_A1_webskills.html" class="btn">Web Skills</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<main>
+		<div class="container">
+			
+			<h2 class="section-title">Guess Game</h2>
+			<br>
+				
+			<p class="welcome">Guess the Random Number Between 1 and 10.</p>
+			<br>
+			
+			<div class="game">
+				
+				<label for="guessField">
+					Take a Guess:
+				</label>
+				
+				<input type="text" id="guessField" class="guessField">
+				<input type="submit" value="Take Guess" class="guessSubmit" id="submitguess">
+				<br>
+			</div>
+			
+			<script>
+		
+				let y = Math.floor(Math.random() * 10 + 1);
+		
+				let guess = 1;
+		
+				document.getElementById("submitguess").onclick = function () {
+			
+					let x = document.getElementById("guessField").value;
+			
+					if (x==y) {
+						alert("NICE WORK! You guessed the correct number in " + guess +" guesses!");
+					}
+					else if (x>y) {
+						guess++;
+						alert("Ahh, your guess was too high. Try a smaller number.");
+					}
+					else {
+						guess++;
+						alert("Ahh, your guess was too low. Try a higher number.");
+					}
+			
+				}
+	
+			</script>
+			
+			
+			
+		</div>
+	</main>
+	
+	<footer>
+         <p class="footerContent">
+            Email: <a class="footerLink" 
+               href="mailto:demonstration@example.com.au"> matthewneilsoftware@gmail.com</a>
+         </p>
+         <p class="footerContent"> Phone: 5512 3456</p>
+         <p>
+            &copy; 2023. All rights reserved. The developer of this site has 
+            permission to use all materials contained within.
+         </p>
+    </footer>
+	
+	
+</body>
+</html>

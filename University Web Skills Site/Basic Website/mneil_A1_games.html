@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Matthew Neil Software</title>	
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" media="print" href="css/print_style.css">
+	
+	<script>
+	
+	function containsNumbers(str)
+	{
+	return /[0-9]/.test(str)
+	}
+	
+	function welcome()
+	{
+	alert("Welcome to Mario's Online Gaming Corporation/Ltd.- Newsletter Signup!!")
+	}
+	
+	function validateForm()
+	{
+	var firstName = document.forms["newsletter"]["first"].value;
+	var lastName = document.forms["newsletter"]["last"].value;
+	var email = document.forms["newsletter"]["email"].value;
+	
+	if (firstName == "" || containsNumbers(firstName) == true)
+	{
+	alert("A Name can't be empty or have numbers in it. Please Try again")
+	return false
+	}
+	
+	if (lastName == "" || containsNumbers(lastName) == true)
+	{
+	alert("A Name can't be empty or have numbers in it. Please Try again")
+	return false
+	}
+	
+	if (email == "")
+	{
+	alert("email cannot be empty. Please Try again")
+	return false
+	}
+	success()
+	return true
+	}
+	
+	function success()
+	{
+	var firstName = document.forms["newsletter"]["first"].value;
+	var email = document.forms["newsletter"]["email"].value;
+	
+	alert("Thank you for signing up, " + firstName + ". The latest news letter has just been sent to your inbox at " + email)
+	}
+	
+	</script>
+	
+</head>
+
+<body onload="welcome()">
+
+	<header>
+		<h1>Mario's Online Gaming</h1>
+	</header>
+	<main>
+		<div class="container">
+		<h2>Welcome to</h2>
+		
+		<form name="newsletter" method="post" id="signup" onsubmit="return validateForm()">
+			<h2>Mario's Online Gaming Newsletter Sign Up!</h2>
+			<fieldset>
+				<legend>Details.</legend>
+				<label for="first">First Name:</label>
+				<input type="text" name="first" id="first" maxLength="60">
+				<label for="last">Last Name:</label>
+				<input type="text" name="last" id="last" maxLength="60">
+				<label for="email">Email:</label>
+				<input type="text" name="email" id="email" maxLength="60">
+				<p>Age Bracket</p>
+				<input type="radio" name="age" id="15-25" value="15-25">15-25
+				<input type="radio" name="age" id="26-35" value="26-35">26-35
+				<input type="radio" name="age" id="36-45" value="36-45">36-45
+				<input type="radio" name="age" id="46-55" value="46-55">46-55
+				<input type="radio" name="age" id="55" value="55">55+<br>
+			</fieldset>
+			<fieldset>
+				<legend>Games</legend>
+				<p>What kind of games do you like?"</p>
+				<input type="checkbox" name="action" id="action" value="yes">Action<br>
+				<input type="checkbox" name="adventure" id="adventure" value="yes">Adventure<br>
+				<input type="checkbox" name="card" id="card" value="yes">Card<br>
+				<input type="checkbox" name="fps" id="fps" value="yes">First Person Shooters<br>
+				<input type="checkbox" name="puzzle" id="puzzle" value="yes">Puzzle<br>
+				<input type="checkbox" name="racing" id="racing" value="yes">Racing<br>
+				<input type="checkbox" name="retro" id="retro" value="yes">Retro<br>
+				<input type="checkbox" name="rpg" id="rpg" value="yes">Role Playing Games<br>
+				<input type="checkbox" name="simulation" id="simulation" value="yes">Simulation<br>
+				<input type="checkbox" name="sports" id="sports" value="yes">Sports<br>
+				<input type="checkbox" name="strategy" id="strategy" value="yes">Strategy<br>
+				<p>Comments - What are some of your favourite games?</p>
+				<textarea name="comments" id="comments" placeholder="comments" cols="60" rows="3"></textarea>
+			</fieldset>
+			<input type="reset" id="reset" value="Reset">
+			<input type="submit" id="submit" value="Submit">
+		</form>
+		<br>
+		</div>
+		
+	</main>
+	
+	<footer>
+         <p class="footerContent">
+            Email: <a class="footerLink" 
+               href="mailto:demonstration@example.com.au"> matthewneilsoftware@gmail.com</a>
+         </p>
+         <p class="footerContent"> Phone: 5512 3456</p>
+         <p>
+            &copy; 2023. All rights reserved. The developer of this site has 
+            permission to use all materials contained within.
+         </p>
+    </footer>
+</body>
+</html>
